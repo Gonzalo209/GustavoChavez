@@ -1,0 +1,1251 @@
+//Avance de proyecto.
+
+//Bibliotecas
+#include <stdio.h>
+#include <stdlib.h>
+
+//Headers 
+#include "proveedores.h"
+#include "chicles.h"
+#include "chocolates.h"
+#include "gomitas.h"
+#include "paletas.h"
+#include "dulcesmexicanos.h"
+#include "caramelos.h"
+#include "refrescos.h"
+#include "frituras.h"
+#include "panes.h"
+#include "galletas.h"
+#include "helados.h"
+#include "compras.h"
+
+/*
+--------------------------------------------------------------------------------------------
+Prototipos de los menus, declare primero las prototipos, para hacer uso de las funciones.
+--------------------------------------------------------------------------------------------
+*/
+
+void menu(int op);
+void opc_productos(void);
+void opc_ventas(void);
+void opc_compras(void);
+void opc_proveedores(void);
+
+
+/*
+--------------------------------------------------------------
+Variables Globales que van a ser utilizadas en los headers.
+Con el modificador extern.
+--------------------------------------------------------------
+*/
+
+int ingresarDatos = 0, ingresarChicles = 0, ingresarChocolates = 0, ingresarGomitas = 0, 
+	ingresarPaletas = 0, ingresarDulcesMexicanos = 0, ingresarCaramelos = 0, ingresarRefrescos = 0,
+	ingresarFrituras = 0, ingresarPanes = 0, ingresarGalletas = 0, ingresarHelados = 0, compras = 0;
+
+/*
+-----------------
+Función principal.
+-----------------
+*/
+
+int main(){
+	
+	int opc;
+	
+	/*
+	------------------------------------------------------------------------------
+	Mande a llamar la función menú, para que aparezco todo en la función principal.
+	------------------------------------------------------------------------------
+	*/
+	menu(opc);
+	
+	return 0;
+}
+
+/*
+-------------------------------
+Este el menu de todo el sistema.
+--------------------------------
+*/
+
+void menu(int op){
+	
+		do{
+		
+		printf("\n-------------------------------------------------------------------------\n");
+		printf("                   ");
+		printf("\t\tDULCERIA 'GOYA'                          |                        \n");
+		printf("-------------------------------------------------------------------------\n");
+		printf("                   ");
+		printf("\n-------------------------------------------------------------------------");
+		printf("\n\t\t\tOPCIONES DE LA DULCERIA 'GOYA'                   |                        \n");
+		printf("-------------------------------------------------------------------------\n");
+		printf("                   ");
+		printf("\n-------------------------------------------------------------------------\n");
+		printf("\n1. PRODUCTOS                                                             | ");
+		printf("\n2. VENTAS                                                                | ");
+		printf("\n3. COMPRA                                                                |");
+		printf("\n4. PROVEEDORES                                                           |");
+		printf("\n5. Salir                                                                 |");
+		printf("\nQue opcion desea elegir: ");
+		scanf("%i",&op); printf("                                                                         |");
+		printf("\n-------------------------------------------------------------------------\n");
+		
+			if(op == 5){
+		
+				printf("\n-------------------------------------------------------------------------\n");
+				printf("\t\t\tVUELVA PRONTO!                                   |");
+				printf("\n-------------------------------------------------------------------------\n");
+			}
+		
+		Sleep(1800);
+		system("cls");
+		
+		/*
+		---------------------------------------------------------------------------------------
+		En esta parte mande a llamar los sub-menus, de productos, ventas, compras y proveedores.
+		---------------------------------------------------------------------------------------
+		*/
+		
+		switch(op){
+			
+			case 1:
+				
+			//--------------------------------------------------------
+			//LA FUNCIÓN OPC_PRODUCTO, LA MANDAMOS A LLAMAR AL MENÚ
+			//--------------------------------------------------------
+			
+			opc_productos();		
+					
+			break;	
+			
+			case 2:
+			
+			//--------------------------------------------------------
+			//LA FUNCIÓN OPC_VENTAS, LA MANDAMOS A LLAMAR AL MENÚ
+			//--------------------------------------------------------
+				
+			opc_ventas();	
+				
+			break;
+			
+			case 3:
+			
+			//--------------------------------------------------------
+			//LA FUNCIÓN OPC_COMPRAS, LA MANDAMOS A LLAMAR AL MENÚ
+			//--------------------------------------------------------	
+				
+			opc_compras();	
+				
+			break;
+			
+			case 4:
+				
+			//--------------------------------------------------------
+			//LA FUNCIÓN OPC_PROVEEDORES, LA MANDAMOS A LLAMAR AL MENÚ
+			//--------------------------------------------------------
+			
+			opc_proveedores();
+				
+			break;
+			
+		}
+		
+
+		
+	}while(op != 5);
+	
+}//Hasta que termine la función Menú
+
+/*
+------------------------------------------------------------------------------------
+Este es el sub-menu de los productos, que al igual la va a tener otros dos sub-menus.
+------------------------------------------------------------------------------------
+*/
+
+void opc_productos(void){
+	
+	int op;
+	
+	do{
+					
+		printf("\n+-------------------------------------------------------------------------");
+		printf("|\n\t\t\tOPCIONES DE PRODUCTOS                           |                        \n");
+		printf("+-------------------------------------------------------------------------\n");
+		printf("|1. Ingresar Producto             					|\n");
+		printf("|2. Enlistar Producto                                                    |\n");
+		printf("|3. Buscar Producto        	                                        |\n");
+		printf("|4. Eliminar Producto 				                        |\n");
+		printf("|5. Modificar Producto                                                   |\n");
+		printf("|6. Regresar al Menu                                                     |\n");
+		printf("|Elegi una opcion: ");
+		scanf("%i",&op); printf("                                                                        |");
+		printf("\n+-------------------------------------------------------------------------\n");
+		
+					
+			if(op == 6){
+					
+				printf("-------------------------------------------------------------------------\n");
+				printf("\t\t\tRegresando al menu                              |\n");
+				printf("-------------------------------------------------------------------------\n");
+			
+			}
+			
+		Sleep(1800);
+		system("cls");		
+					
+				switch(op){
+							
+					case 1:
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tINGRESAR PRODUCTOS                |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+					
+						do{
+							
+							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
+							printf("\nElige una opcion: ");
+							scanf("%d", &op); printf("                                                                        |");
+							printf("\n-------------------------------------------------------------------------\n");
+							
+							if(op == 12){
+					
+							printf("-------------------------------------------------------------------------\n");
+							printf("\t\t\tRegresando al sub-menu                              |\n");
+							printf("-------------------------------------------------------------------------\n");
+			
+							}
+								
+							Sleep(1800);
+							system("cls");
+							
+							switch(op){
+	
+								case 1:
+								
+									ingresaChicles(chicle);
+									
+									Sleep(1800);
+									system("cls");
+									
+								break;	
+								
+								case 2:
+									
+									ingresaChocolate(chocolate);
+									
+									Sleep(1800);
+									system("cls");
+									
+								break;
+								
+								case 3:
+									
+									ingresaGomitas(gomitas);
+									
+									Sleep(1800);
+									system("cls");
+									
+									
+								break;
+								
+								case 4:
+									
+									ingresaPaletas(paletas);
+									
+									Sleep(1800);
+									system("cls");
+											
+									
+								break;
+								
+								case 5:
+									
+									ingresaDulcesMexicanos(dulcesmexicanos);
+									
+									Sleep(1800);
+									system("cls");			
+									
+								break;
+								
+								case 6:
+									
+									ingresaCaramelos(caramelos);
+									
+									Sleep(1800);
+									system("cls");
+									
+								break;
+								
+								case 7:
+									
+									ingresaRefrescos(refrescos);
+									
+									Sleep(1800);
+									system("cls");
+									
+									
+								break;
+								
+								case 8:
+									
+									ingresaFrituras(frituras);
+									
+									Sleep(1800);
+									system("cls");
+									
+									
+								break;
+								
+								case 9:
+									
+									ingresaPanes(panes);
+									
+									Sleep(1800);
+									system("cls");
+									
+								break;
+								
+								case 10:
+									
+									ingresaGalletas(galletas);
+									
+									Sleep(1800);
+									system("cls");
+									
+									
+								break;
+								
+								case 11:
+									
+									ingresaHelados(helados);
+									
+									Sleep(1800);
+									system("cls");	
+									
+								break;
+											
+							}
+										
+									
+						}while(op != 12);
+					
+					
+						Sleep(1800);
+						system("cls");
+								
+					break;
+							
+					case 2:
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tENLISTAR PRODUCTOS      |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+						
+						do{
+							
+							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
+							printf("\nElige una opcion: ");
+							scanf("%d", &op); printf("                                                                        |");
+							printf("\n-------------------------------------------------------------------------\n");
+							
+							if(op == 12){
+					
+							printf("-------------------------------------------------------------------------\n");
+							printf("\t\t\tRegresando al sub-menu                              |\n");
+							printf("-------------------------------------------------------------------------\n");
+			
+							}
+								
+							system("pause");
+							system("cls");
+							
+							switch(op){
+	
+								case 1:
+								
+									enlistarChicles(chicle);
+									
+									system("pause");
+									system("cls");
+									
+								break;	
+								
+								case 2:
+									
+									enlistarChocolates(chocolate);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 3:
+									
+									enlistarGomitas(gomitas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 4:
+									
+									
+									enlistarPaletas(paletas);
+									
+									system("pause");
+									system("cls");		
+									
+								break;
+								
+								case 5:
+									
+									enlistarDulcesMexicanos(dulcesmexicanos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 6:
+									
+									enlistarCaramelos(caramelos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 7:
+									
+									enlistarRefrescos(refrescos);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 8:
+									
+									enlistarFrituras(frituras);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 9:
+									
+									enlistarPanes(panes);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 10:
+									
+									enlistarGalletas(galletas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 11:
+									
+									enlistarHelados(helados);
+									
+									system("pause");
+									system("cls");	
+									
+								break;
+											
+							}
+										
+									
+						}while(op != 12);
+						
+						
+						system("pause");
+						system("cls");
+							
+					break;	
+					
+					case 3:
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tBUSCAR PRODUCTOS      |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+						
+						do{
+							
+							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
+							printf("\nElige una opcion: ");
+							scanf("%d", &op); printf("                                                                        |");
+							printf("\n-------------------------------------------------------------------------\n");
+							
+							if(op == 12){
+					
+							printf("-------------------------------------------------------------------------\n");
+							printf("\t\t\tRegresando al sub-menu                              |\n");
+							printf("-------------------------------------------------------------------------\n");
+			
+							}
+								
+							system("pause");
+							system("cls");
+							
+							//segun op hacer:
+							switch(op){
+	
+								case 1:
+								
+									buscarChicles(chicle);
+									
+									system("pause");
+									system("cls");
+									
+								break;	
+								
+								case 2:
+									
+									buscarChocolates(chocolate);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 3:
+									
+									buscarGomitas(gomitas);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 4:
+									
+									buscarPaletas(paletas);
+									
+									system("pause");
+									system("cls");		
+									
+									
+								break;
+								
+								case 5:
+									
+									buscarDulcesMexicanos(dulcesmexicanos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 6:
+									
+									buscarCaramelos(caramelos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 7:
+									
+									buscarRefrescos(refrescos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 8:
+									
+									buscarFrituras(frituras);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 9:
+									
+									buscarPanes(panes);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 10:
+									
+									buscarGalletas(galletas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 11:
+									
+									buscarHelados(helados);
+									
+									system("pause");
+									system("cls");	
+									
+								break;
+											
+							}
+										
+									
+						}while(op != 12);
+						
+						//if(!(edad > 17)){
+							
+							//codigo
+							
+					//	}
+						
+						system("pause");
+						system("cls");
+							
+					break;
+					
+					case 4:
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tELIMINAR PRODUCTOS      |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+						
+						do{
+							
+							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
+							printf("\nElige una opcion: ");
+							scanf("%d", &op); printf("                                                                        |");
+							printf("\n-------------------------------------------------------------------------\n");
+							
+							if(op == 12){
+					
+							printf("-------------------------------------------------------------------------\n");
+							printf("\t\t\tRegresando al sub-menu                              |\n");
+							printf("-------------------------------------------------------------------------\n");
+			
+							}
+								
+							system("pause");
+							system("cls");
+							
+							switch(op){
+	
+								case 1:
+								
+									eliminarChicles(chicle);
+									
+									system("pause");
+									system("cls");
+									
+								break;	
+								
+								case 2:
+									
+									eliminarChocolates(chocolate);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 3:
+									
+									eliminarGomitas(gomitas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 4:
+									
+									eliminarPaletas(paletas);
+									
+									system("pause");
+									system("cls");	
+									
+								break;
+								
+								case 5:
+									
+									eliminarDulcesMexicanos(dulcesmexicanos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 6:
+									
+									eliminarCaramelos(caramelos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 7:
+									
+									eliminarRefrescos(refrescos);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 8:
+									
+									eliminarFrituras(frituras);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 9:
+									
+									eliminarPanes(panes);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 10:
+									
+									eliminarGalletas(galletas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 11:
+									
+									eliminarHelados(helados);
+									
+									system("pause");
+									system("cls");	
+									
+								break;
+											
+							}
+										
+									
+						}while(op != 12);
+						
+						system("pause");
+						system("cls");
+							
+					break;
+							
+					case 5:
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tMODIFICAR PRODUCTOS      |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+						
+						do{
+							
+							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
+							printf("\nElige una opcion: ");
+							scanf("%d", &op); printf("                                                                        |");
+							printf("\n-------------------------------------------------------------------------\n");
+							
+							if(op == 12){
+					
+							printf("-------------------------------------------------------------------------\n");
+							printf("\t\t\tRegresando al sub-menu                              |\n");
+							printf("-------------------------------------------------------------------------\n");
+			
+							}
+								
+							system("pause");
+							system("cls");
+							
+							switch(op){
+	
+								case 1:
+								
+									modificarChicles(chicle);
+									
+									system("pause");
+									system("cls");
+									
+								break;	
+								
+								case 2:
+									
+									modificarChocolates(chocolate);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 3:
+									
+									modificarGomitas(gomitas);
+									
+									system("pause");
+									system("cls");
+									
+									
+								break;
+								
+								case 4:
+									
+									modificarPaletas(paletas);
+									
+									system("pause");
+									system("cls");
+									
+								break;
+								
+								case 5:
+									
+									modificarDulcesMexicanos(dulcesmexicanos);
+									
+									system("pause");
+									system("cls");
+									
+									break;
+								
+								case 6:
+									
+									modificarCaramelos(caramelos);
+									
+									system("pause");
+									system("cls");
+									
+									
+									break;
+								
+								case 7:
+									
+									modificarRefrescos(refrescos);
+									
+									system("pause");
+									system("cls");
+									
+									
+									break;
+								
+								case 8:
+									
+									modificarFrituras(frituras);
+									
+									system("pause");
+									system("cls");
+									
+									break;
+								
+								case 9:
+									
+									modificarPanes(panes);
+									
+									system("pause");
+									system("cls");
+									
+									
+									break;
+								
+								case 10:
+									
+									modificarGalletas(galletas);
+									
+									system("pause");
+									system("cls");
+									
+									
+									break;
+								
+								case 11:
+									
+									modificarHelados(helados);
+									
+									system("pause");
+									system("cls");	
+									
+									
+									break;
+											
+							}
+										
+									
+						}while(op != 12);
+						
+						
+						system("pause");
+						system("cls");
+							
+					break;									
+				}
+				
+	}while(op != 6);
+					
+}//Termina la función sub-menu de productos.
+
+
+/*
+
+------------------------------
+Este es el sub-menu de ventas.
+------------------------------
+
+*/
+
+
+void opc_ventas(void){
+	
+	int op;
+	
+	do{
+
+		printf("\n-------------------------------------------------------------------------");
+		printf("\n\t\t\tOPCIONES DE VENTAS                              |                        \n");
+		printf("-------------------------------------------------------------------------\n");
+		printf("1. Consulta de ventas realizadas                                        |\n");                                     
+		printf("2. Regresar al menu                                                     |                       ");
+		printf("\nElige una opcion: ");
+		scanf("%d", &op); printf("                                                                        |");
+		printf("\n-------------------------------------------------------------------------\n");
+	
+			if(op == 2){
+					
+				printf("-------------------------------------------------------------------------\n");
+				printf("\t\t\tRegresando al menu                              |\n");
+				printf("-------------------------------------------------------------------------\n");
+			
+			}
+			
+		system("pause");
+		system("cls");
+		
+			switch(op){
+				
+				case 1:
+					
+					printf("\n-------------------------------------------------------------------------");
+					printf("\n\t\t\tCONSULTA DE VENTAS REALIZADAS                   |                        \n");
+					printf("-------------------------------------------------------------------------\n");
+					
+					enlistarVentas();
+					
+					system("pause");
+					system("cls");
+					
+				break;	
+				
+			
+				
+			}
+	
+	}while(op != 2);
+
+}//Termina la función de sub-menu de las ventas.
+
+
+/*
+
+-----------------------------------
+Este es el sub-menu de las compras.
+-----------------------------------
+
+*/
+
+void opc_compras(void){
+	
+	/*
+	
+	--------------------------------
+	VARIABLES LOCALES DE LA FUNCIÓN 
+	COMPRAS.
+	-------------------------------
+	
+	*/
+	
+	int op;
+	
+	do{
+
+		printf("\n-------------------------------------------------------------------------");
+		printf("\n\t\t\tOPCIONES DE COMPRAS                             |                        \n");
+		printf("-------------------------------------------------------------------------\n");
+		printf("1. Relizar Compra De Productos                                          |\n");
+		printf("2. Consulta de Factura                                                  |\n");
+		printf("3. Consulta de Productos                                                |\n");
+		printf("4. Regresar al menu                                                     |");
+		printf("\nElegi una opcion: ");
+		scanf("%d", &op); printf("                                                                        |");
+		printf("\n-------------------------------------------------------------------------\n");
+	
+			if(op == 4){
+					
+				printf("-------------------------------------------------------------------------\n");
+				printf("\t\t\tRegresando al menu                              |\n");
+				printf("-------------------------------------------------------------------------\n");
+			
+			}
+			
+		system("pause");
+		system("cls");
+		
+			switch(op){
+				
+				case 1:
+					
+					printf("\n-------------------------------------------------------------------------");
+					printf("\n\t\t\tREALIZAR COMPRA DE PRODUCTOS                    |                        \n");
+					printf("-------------------------------------------------------------------------\n");
+					
+					comprarProductos();
+					paga();
+					
+					system("pause");
+					system("cls");
+					
+				break;	
+				
+				case 2:
+					
+					printf("\n-------------------------------------------------------------------------");
+					printf("\n\t\t\tCONSULTA DE FACTURAS                            |                        \n");
+					printf("-------------------------------------------------------------------------\n");
+					
+					consultarCompra();
+					
+					system("pause");
+					system("cls");
+						
+				break;
+				
+				case 3:
+					
+					printf("\n-------------------------------------------------------------------------");
+					printf("\n\t\t\tCONSULTA DE PRODUCTOS                           |                        \n");
+					printf("-------------------------------------------------------------------------\n");
+					
+					enlistarChicles(chicle);
+					
+					
+					system("pause");
+					system("cls");
+					
+				break;
+				
+			}
+	
+	}while(op != 4);
+
+	
+	
+	
+}//TERMINA LA FUNCIÓN DE SUB-MENU COMPRAS
+
+
+/*
+------------------------------------------------------------------------------------
+Este es el sub-menu de los proveedores.
+------------------------------------------------------------------------------------
+*/
+
+void opc_proveedores(void){
+	
+	/*
+	---------------------------------
+	Variables locales de la función.
+	---------------------------------
+	*/
+	int op;
+	
+	do{
+		
+		/*
+		-----------------------------------------
+		ETSA ES NUESTRA INTERFAZ DE PROVEEDORES.
+		----------------------------------------
+		*/
+		
+		
+		printf("\n-------------------------------------------------------------------------");
+		printf("\n\t\t\tOPCIONES DE PROVEEDORES                         |                        \n");
+		printf("-------------------------------------------------------------------------\n");
+		printf("1. Ingresar Proveedores                                                 |\n");
+		printf("2. Enlistar proveedores                                                 |\n");
+		printf("3. Buscar Proveedores                                                   |\n");
+		printf("4. Modificar Proveedores                                                |\n");
+		printf("5. Eliminar Proveedores                                                 |\n");
+		printf("6. Regresar al Menu                                                     |\n");
+		printf("Elegi una opcion: ");
+		scanf("%d", &op); printf("                                                                        |");
+		printf("\n-------------------------------------------------------------------------\n");
+		
+			if(op == 6){
+				
+				/*
+				---------------------------------
+				CUANDO DIGITEMOS LA OPCIÓN 6
+				NOS VA A REGRESAR AL MENÚ Y VA A
+				MOSTRAR EL MENSAJE REGRESANDO AL
+				MENÚ.
+				---------------------------------
+				*/
+					
+				printf("-------------------------------------------------------------------------\n");
+				printf("\t\t\tRegresando al menu                              |\n");
+				printf("-------------------------------------------------------------------------\n");
+			
+			}
+			
+		system("pause");
+		system("cls");
+		
+				switch(op){
+						
+					case 1:
+						
+						/*
+						---------------------------------
+						EN EL CASO 1 VAMOS IR INGRESANDO
+						LOS PROVEEDORES Y MANDAMOS A LLAMAR
+						LA FUNCIÓN INGRESARPROVEEDORES QUE
+						ESTA EN EL HEADER PROVEEDORES.
+						--------------------------------
+						*/
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tINGRESAR PROVEEDORES                         |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+						
+						ingresarProveedores(proveedor);
+						
+						
+						system("pause");
+						system("cls");
+					
+						break;
+					
+					case 2:
+						
+						
+						/*
+						---------------------------------
+						EN EL CASO 2 VAMOS A TENER LA LISTA
+						DE LOS PROVEEDORES AGREGAODS 
+						Y MANDAMOS A LLAMAR LA FUNCIÓN 
+						ENLISTARPROVEEDORES QUE ESTA 
+						EN EL HEADER PROVEEDORES.
+						--------------------------------
+						*/
+						
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tENLISTAR PROVEEDORES                |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+					
+						enlistarProveedores(proveedor);
+						
+						system("pause");
+						system("cls");
+						
+						break;	
+					
+					case 3:
+						
+						/*
+						-----------------------------------
+						EN EL CASO 3 VAMOS A BUSCAR ALGÚN
+						PROVEEDOR, EXCLUSIVAMENTE CON SU ID 
+						Y MANDAMOS A LLAMAR LA FUNCIÓN 
+						BUSCARPROVEEDORES QUE ESTA 
+						EN EL HEADER PROVEEDORES.
+						----------------------------------
+						*/
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tBUSCAR PROVEEDORES                |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+					
+						buscarProveedores(proveedor);
+					
+						system("pause");
+						system("cls");
+						
+						break;
+					
+					case 4:
+						
+						/*
+						---------------------------------
+						EN EL CASO 4 VAMOS A MODIFICAR
+						ALGUNOS DE LOS PROVEEDORES AGREGADOS,
+						PARA MODIFICARLO NECESITAMOS EL ID, 
+						Y MANDAMOS A LLAMAR LA FUNCIÓN 
+						MODIFICARPROVEEDORES QUE ESTA 
+						EN EL HEADER PROVEEDORES.
+						--------------------------------
+						*/
+						
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tMODIFICAR PROVEEDORES                |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+					
+						modificarProveedores(proveedor);
+						
+						system("pause");
+						system("cls");
+						
+						break;
+					
+					case 5:
+						
+						/*
+						---------------------------------
+						EN EL CASO 5 VAMOS A ELIMINAR
+						ALGUNOS DE LOS PROVEEDORES AGREGADOS,
+						PARA ELIMINARLO NECESITAMOS SU ID, 
+						Y MANDAMOS A LLAMAR LA FUNCIÓN 
+						ELIMINARPROVEEDORES QUE ESTA 
+						EN EL HEADER PROVEEDORES.
+						--------------------------------
+						*/
+						
+						
+						printf("\n-------------------------------------------------------------------------");
+						printf("\n\t\t\tELIMINAR PROVEEDORES                |                        \n");
+						printf("-------------------------------------------------------------------------\n");
+					
+						eliminarProveedores(proveedor);
+						
+						system("pause");
+						system("cls");
+						
+						break;
+					
+				}
+	
+	}while(op != 6);
+	
+}//Termina la función sub-menu Proveedores.

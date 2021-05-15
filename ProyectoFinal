@@ -73,33 +73,33 @@ void menu(int op){
 	
 		do{
 		
-		printf("\n-------------------------------------------------------------------------\n");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 		printf("                   ");
-		printf("\t\tDULCERIA 'GOYA'                          |                        \n");
-		printf("-------------------------------------------------------------------------\n");
+		printf(":\t\tDULCERIA 'GOYA'                          :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 		printf("                   ");
-		printf("\n-------------------------------------------------------------------------");
-		printf("\n\t\t\tOPCIONES DE LA DULCERIA 'GOYA'                   |                        \n");
-		printf("-------------------------------------------------------------------------\n");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+		printf("\n:\t\t\tOPCIONES DE LA DULCERIA 'GOYA'                   :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 		printf("                   ");
-		printf("\n-------------------------------------------------------------------------\n");
-		printf("\n1. PRODUCTOS                                                             | ");
-		printf("\n2. VENTAS                                                                | ");
-		printf("\n3. COMPRA                                                                |");
-		printf("\n4. PROVEEDORES                                                           |");
-		printf("\n5. Salir                                                                 |");
-		printf("\nQue opcion desea elegir: ");
-		scanf("%i",&op); printf("                                                                         |");
-		printf("\n-------------------------------------------------------------------------\n");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		printf("\n:1. PRODUCTOS                                                             : ");
+		printf("\n:2. VENTAS                                                                : ");
+		printf("\n:3. COMPRA                                                                :");
+		printf("\n:4. PROVEEDORES                                                           :");
+		printf("\n:5. Salir                                                                 :");
+		printf("\n:Que opcion desea elegir: ");
+		scanf("%d", &op); printf("                                                                         :");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 		
 			if(op == 5){
 		
-				printf("\n-------------------------------------------------------------------------\n");
-				printf("\t\t\tVUELVA PRONTO!                                   |");
-				printf("\n-------------------------------------------------------------------------\n");
+				printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				printf(":\t\t\tVUELVA PRONTO!                                   :");
+				printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			}
 		
-		Sleep(1800);
+		Sleep(800);
 		system("cls");
 		
 		/*
@@ -170,55 +170,53 @@ void opc_productos(void){
 	
 	do{
 					
-		printf("\n+-------------------------------------------------------------------------");
-		printf("|\n\t\t\tOPCIONES DE PRODUCTOS                           |                        \n");
-		printf("+-------------------------------------------------------------------------\n");
-		printf("|1. Ingresar Producto             					|\n");
-		printf("|2. Enlistar Producto                                                    |\n");
-		printf("|3. Buscar Producto        	                                        |\n");
-		printf("|4. Eliminar Producto 				                        |\n");
-		printf("|5. Modificar Producto                                                   |\n");
-		printf("|6. Regresar al Menu                                                     |\n");
-		printf("|Elegi una opcion: ");
-		scanf("%i",&op); printf("                                                                        |");
-		printf("\n+-------------------------------------------------------------------------\n");
-		
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+		printf("\n:\t\t\tOPCIONES DE PRODUCTOS                           :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		printf(":1. Ingresar Producto             					:\n");
+		printf(":2. Enlistar Producto                                                    :\n");
+		printf(":3. Buscar Producto        	                                        :\n");
+		printf(":4. Eliminar Producto 				                        :\n");
+		printf(":5. Modificar Producto                                                   :\n");
+		printf(":6. Regresar al Menu                                                     :\n");
+		printf(":Elegi una opcion: ");
+		scanf("%d", &op); printf("                                                                        :");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 			if(op == 6){
-					
-				printf("-------------------------------------------------------------------------\n");
-				printf("\t\t\tRegresando al menu                              |\n");
-				printf("-------------------------------------------------------------------------\n");
-			
+		
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				printf(":\t\t\tRegresando al menu                              :\n");
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			}
 			
-		Sleep(1800);
+		Sleep(800);
 		system("cls");		
 					
 				switch(op){
 							
 					case 1:
+									
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n:\t\t\tINGRESAR PRODUCTOS                :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tINGRESAR PRODUCTOS                |                        \n");
-						printf("-------------------------------------------------------------------------\n");
-					
 						do{
 							
 							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
 							printf("\nElige una opcion: ");
-							scanf("%d", &op); printf("                                                                        |");
-							printf("\n-------------------------------------------------------------------------\n");
+							scanf("%d", &op); printf("                                                                        :");
+							printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 							
 							if(op == 12){
 					
-							printf("-------------------------------------------------------------------------\n");
-							printf("\t\t\tRegresando al sub-menu                              |\n");
-							printf("-------------------------------------------------------------------------\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+							printf("\t\t\tRegresando al sub-menu                              :\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 							}
 								
-							Sleep(1800);
+							Sleep(800);
 							system("cls");
 							
 							switch(op){
@@ -227,7 +225,7 @@ void opc_productos(void){
 								
 									ingresaChicles(chicle);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 								break;	
@@ -236,7 +234,7 @@ void opc_productos(void){
 									
 									ingresaChocolate(chocolate);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 								break;
@@ -245,7 +243,7 @@ void opc_productos(void){
 									
 									ingresaGomitas(gomitas);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 									
@@ -255,7 +253,7 @@ void opc_productos(void){
 									
 									ingresaPaletas(paletas);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 											
 									
@@ -265,7 +263,7 @@ void opc_productos(void){
 									
 									ingresaDulcesMexicanos(dulcesmexicanos);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");			
 									
 								break;
@@ -274,7 +272,7 @@ void opc_productos(void){
 									
 									ingresaCaramelos(caramelos);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 								break;
@@ -283,7 +281,7 @@ void opc_productos(void){
 									
 									ingresaRefrescos(refrescos);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 									
@@ -293,7 +291,7 @@ void opc_productos(void){
 									
 									ingresaFrituras(frituras);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 									
@@ -303,7 +301,7 @@ void opc_productos(void){
 									
 									ingresaPanes(panes);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 								break;
@@ -312,7 +310,7 @@ void opc_productos(void){
 									
 									ingresaGalletas(galletas);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");
 									
 									
@@ -322,7 +320,7 @@ void opc_productos(void){
 									
 									ingresaHelados(helados);
 									
-									Sleep(1800);
+									Sleep(800);
 									system("cls");	
 									
 								break;
@@ -333,29 +331,30 @@ void opc_productos(void){
 						}while(op != 12);
 					
 					
-						Sleep(1800);
+						Sleep(800);
 						system("cls");
 								
 					break;
 							
 					case 2:
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tENLISTAR PRODUCTOS      |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tENLISTAR PRODUCTOS      :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
 						do{
 							
 							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
 							printf("\nElige una opcion: ");
-							scanf("%d", &op); printf("                                                                        |");
-							printf("\n-------------------------------------------------------------------------\n");
+							scanf("%d", &op); printf("                                                                        :");
+							printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 							
 							if(op == 12){
 					
-							printf("-------------------------------------------------------------------------\n");
-							printf("\t\t\tRegresando al sub-menu                              |\n");
-							printf("-------------------------------------------------------------------------\n");
+							
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+							printf(":\t\t\tRegresando al sub-menu                              :\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 							}
 								
@@ -480,22 +479,22 @@ void opc_productos(void){
 					
 					case 3:
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tBUSCAR PRODUCTOS      |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tBUSCAR PRODUCTOS      :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
 						do{
 							
 							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
 							printf("\nElige una opcion: ");
-							scanf("%d", &op); printf("                                                                        |");
-							printf("\n-------------------------------------------------------------------------\n");
+							scanf("%d", &op); printf("                                                                        :");
+							printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 							
 							if(op == 12){
 					
-							printf("-------------------------------------------------------------------------\n");
-							printf("\t\t\tRegresando al sub-menu                              |\n");
-							printf("-------------------------------------------------------------------------\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+							printf("\t\t\tRegresando al sub-menu                              :\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 							}
 								
@@ -624,22 +623,22 @@ void opc_productos(void){
 					
 					case 4:
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tELIMINAR PRODUCTOS      |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tELIMINAR PRODUCTOS      :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
 						do{
 							
 							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
 							printf("\nElige una opcion: ");
-							scanf("%d", &op); printf("                                                                        |");
-							printf("\n-------------------------------------------------------------------------\n");
+							scanf("%d", &op); printf("                                                                        :");
+							printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 							
 							if(op == 12){
 					
-							printf("-------------------------------------------------------------------------\n");
-							printf("\t\t\tRegresando al sub-menu                              |\n");
-							printf("-------------------------------------------------------------------------\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+							printf("\t\t\tRegresando al sub-menu                              :\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 							}
 								
@@ -760,23 +759,24 @@ void opc_productos(void){
 					break;
 							
 					case 5:
+					
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tMODIFICAR PRODUCTOS       :                        \n");	
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tMODIFICAR PRODUCTOS      |                        \n");
-						printf("-------------------------------------------------------------------------\n");
 						
 						do{
 							
 							printf("1.Chicles\n2.Chocolates\n3.Gomitas\n4.Paletas\n5.Dulces Mexicanos\n6.Caramelos\n7.Refrescos\n8.Frituras\n9.Panes\n10.Galletas\n11.Helados\n12.Regresar al Sub-Menu");
 							printf("\nElige una opcion: ");
-							scanf("%d", &op); printf("                                                                        |");
-							printf("\n-------------------------------------------------------------------------\n");
+							scanf("%d", &op); printf("                                                                        :");
+							printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 							
 							if(op == 12){
-					
-							printf("-------------------------------------------------------------------------\n");
-							printf("\t\t\tRegresando al sub-menu                              |\n");
-							printf("-------------------------------------------------------------------------\n");
+				
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+							printf("\t\t\tRegresando al sub-menu                              :\n");
+							printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 							}
 								
@@ -922,21 +922,21 @@ void opc_ventas(void){
 	
 	do{
 
-		printf("\n-------------------------------------------------------------------------");
-		printf("\n\t\t\tOPCIONES DE VENTAS                              |                        \n");
-		printf("-------------------------------------------------------------------------\n");
-		printf("1. Consulta de ventas realizadas                                        |\n");                                     
-		printf("2. Regresar al menu                                                     |                       ");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+		printf("\n\t\t\tOPCIONES DE VENTAS                              :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		printf("1. Consulta de ventas realizadas                                        :\n");                                     
+		printf("2. Regresar al menu                                                     :                       ");
 		printf("\nElige una opcion: ");
-		scanf("%d", &op); printf("                                                                        |");
-		printf("\n-------------------------------------------------------------------------\n");
+		scanf("%d", &op); printf("                                                                        :");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 	
 			if(op == 2){
 					
-				printf("-------------------------------------------------------------------------\n");
-				printf("\t\t\tRegresando al menu                              |\n");
-				printf("-------------------------------------------------------------------------\n");
-			
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				printf("\t\t\tRegresando al menu                              :\n");
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				
 			}
 			
 		system("pause");
@@ -946,9 +946,9 @@ void opc_ventas(void){
 				
 				case 1:
 					
-					printf("\n-------------------------------------------------------------------------");
-					printf("\n\t\t\tCONSULTA DE VENTAS REALIZADAS                   |                        \n");
-					printf("-------------------------------------------------------------------------\n");
+					printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+					printf("\n\t\t\tCONSULTA DE VENTAS REALIZADAS                   :                        \n");
+					printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 					enlistarVentas();
 					
@@ -989,22 +989,23 @@ void opc_compras(void){
 	
 	do{
 
-		printf("\n-------------------------------------------------------------------------");
-		printf("\n\t\t\tOPCIONES DE COMPRAS                             |                        \n");
-		printf("-------------------------------------------------------------------------\n");
-		printf("1. Relizar Compra De Productos                                          |\n");
-		printf("2. Consulta de Factura                                                  |\n");
-		printf("3. Consulta de Productos                                                |\n");
-		printf("4. Regresar al menu                                                     |");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+		printf("\n\t\t\tOPCIONES DE COMPRAS                             :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		printf("1. Relizar Compra De Productos                                          :\n");
+		printf("2. Consulta de Factura                                                  :\n");
+		printf("3. Consulta de Productos                                                :\n");
+		printf("4. Regresar al menu                                                     :");
 		printf("\nElegi una opcion: ");
-		scanf("%d", &op); printf("                                                                        |");
-		printf("\n-------------------------------------------------------------------------\n");
+		scanf("%d", &op); printf("                                                                        :");
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		
 	
 			if(op == 4){
 					
-				printf("-------------------------------------------------------------------------\n");
-				printf("\t\t\tRegresando al menu                              |\n");
-				printf("-------------------------------------------------------------------------\n");
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				printf("\t\t\tRegresando al menu                              :\n");
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			
 			}
 			
@@ -1015,13 +1016,15 @@ void opc_compras(void){
 				
 				case 1:
 					
-					printf("\n-------------------------------------------------------------------------");
-					printf("\n\t\t\tREALIZAR COMPRA DE PRODUCTOS                    |                        \n");
-					printf("-------------------------------------------------------------------------\n");
+					printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+					printf("\n\t\t\tREALIZAR COMPRA DE PRODUCTOS                    :                        \n");
+					printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
-					comprarProductos();
-					paga();
+				
+										
+						comprarProductos();
 					
+				
 					system("pause");
 					system("cls");
 					
@@ -1029,9 +1032,9 @@ void opc_compras(void){
 				
 				case 2:
 					
-					printf("\n-------------------------------------------------------------------------");
-					printf("\n\t\t\tCONSULTA DE FACTURAS                            |                        \n");
-					printf("-------------------------------------------------------------------------\n");
+					printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+					printf("\n\t\t\tCONSULTA DE FACTURAS                            :                        \n");
+					printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 					consultarCompra();
 					
@@ -1040,13 +1043,14 @@ void opc_compras(void){
 						
 				break;
 				
+				/*
 				case 3:
 					
-					printf("\n-------------------------------------------------------------------------");
-					printf("\n\t\t\tCONSULTA DE PRODUCTOS                           |                        \n");
-					printf("-------------------------------------------------------------------------\n");
+					printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+					printf("\n\t\t\tCONSULTA DE PRODUCTOS                           :                        \n");
+					printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
-					enlistarChicles(chicle);
+					enlistar();
 					
 					
 					system("pause");
@@ -1054,6 +1058,7 @@ void opc_compras(void){
 					
 				break;
 				
+				*/
 			}
 	
 	}while(op != 4);
@@ -1086,21 +1091,19 @@ void opc_proveedores(void){
 		ETSA ES NUESTRA INTERFAZ DE PROVEEDORES.
 		----------------------------------------
 		*/
-		
-		
-		printf("\n-------------------------------------------------------------------------");
-		printf("\n\t\t\tOPCIONES DE PROVEEDORES                         |                        \n");
-		printf("-------------------------------------------------------------------------\n");
-		printf("1. Ingresar Proveedores                                                 |\n");
-		printf("2. Enlistar proveedores                                                 |\n");
-		printf("3. Buscar Proveedores                                                   |\n");
-		printf("4. Modificar Proveedores                                                |\n");
-		printf("5. Eliminar Proveedores                                                 |\n");
-		printf("6. Regresar al Menu                                                     |\n");
-		printf("Elegi una opcion: ");
-		scanf("%d", &op); printf("                                                                        |");
-		printf("\n-------------------------------------------------------------------------\n");
-		
+	
+		printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+		printf("\n:\t\t\tOPCIONES DE PROVEEDORES                         :                        \n");
+		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		printf(":1. Ingresar Proveedores                                                 :\n");
+		printf(":2. Enlistar proveedores                                                 :\n");
+		printf(":3. Buscar Proveedores                                                   :\n");
+		printf(":4. Modificar Proveedores                                                :\n");
+		printf(":5. Eliminar Proveedores                                                 :\n");
+		printf(":6. Regresar al Menu                                                     :\n");
+		printf(":Elige una opcion: ");
+		scanf("%d", &op); printf("                                                                        :");
+		printf("\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			if(op == 6){
 				
 				/*
@@ -1112,13 +1115,12 @@ void opc_proveedores(void){
 				---------------------------------
 				*/
 					
-				printf("-------------------------------------------------------------------------\n");
-				printf("\t\t\tRegresando al menu                              |\n");
-				printf("-------------------------------------------------------------------------\n");
-			
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+				printf(":\t\t\tRegresando al menu                              :\n");
+				printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 			}
 			
-		system("pause");
+		Sleep(800);
 		system("cls");
 		
 				switch(op){
@@ -1134,9 +1136,9 @@ void opc_proveedores(void){
 						--------------------------------
 						*/
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tINGRESAR PROVEEDORES                         |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tINGRESAR PROVEEDORES                         :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 						
 						ingresarProveedores(proveedor);
 						
@@ -1160,9 +1162,9 @@ void opc_proveedores(void){
 						*/
 						
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tENLISTAR PROVEEDORES                |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tENLISTAR PROVEEDORES                :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 						enlistarProveedores(proveedor);
 						
@@ -1183,9 +1185,9 @@ void opc_proveedores(void){
 						----------------------------------
 						*/
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tBUSCAR PROVEEDORES                |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tBUSCAR PROVEEDORES                :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 						buscarProveedores(proveedor);
 					
@@ -1207,10 +1209,9 @@ void opc_proveedores(void){
 						--------------------------------
 						*/
 						
-						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tMODIFICAR PROVEEDORES                |                        \n");
-						printf("-------------------------------------------------------------------------\n");
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tMODIFICAR PROVEEDORES                :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 					
 						modificarProveedores(proveedor);
 						
@@ -1233,10 +1234,10 @@ void opc_proveedores(void){
 						*/
 						
 						
-						printf("\n-------------------------------------------------------------------------");
-						printf("\n\t\t\tELIMINAR PROVEEDORES                |                        \n");
-						printf("-------------------------------------------------------------------------\n");
-					
+						printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+						printf("\n\t\t\tELIMINAR PROVEEDORES                :                        \n");
+						printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+						
 						eliminarProveedores(proveedor);
 						
 						system("pause");

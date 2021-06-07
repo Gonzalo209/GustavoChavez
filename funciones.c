@@ -46,10 +46,12 @@ int main(){
 				printf("\nIngrese un numero positivo: ");
 				scanf("%lf", &numero);
 			
-				calculo = factorial (numero);
-				printf("El factorial del numero %.0lf es de: %.0lf ", numero, calculo);
 				
-			}while(numero < 0);	//Aqui hay un pequeño error, si volvemos a ingresar un número negativo, se rompe el programa.
+			}while(numero < 0);	
+			
+			calculo = factorial (numero);
+			
+			printf("\nEl factorial del numero %.0lf es de: %.0lf ", numero, calculo);
 						
 		}
 		
